@@ -15,6 +15,14 @@
 using namespace std;
 
 // TODO: Crie a função para preencher o array
+void preencherArray(int* arr, int& tamanho){
+    std::cout << "digite o tamanho do array: " << std::endl;
+    std::cin >> tamanho;
+
+    for (int i = 0; i < tamanho; i++) {
+        arr[i] = i * 10;
+    }
+}
 
 int main() {
     const int CAPACIDADE = 100;
@@ -22,8 +30,13 @@ int main() {
     int tamanho = 0;
     
     // TODO: Chame a função para preencher o array
+    preencherArray(array, tamanho);
     
     // TODO: Exiba o array
+    for(int i = 0; i < tamanho; i++){
+        std::cout << array[i] << " ";
+    }
+    std::cout << std::endl;
     
     // Libera memória
     delete[] array;
