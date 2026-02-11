@@ -19,8 +19,11 @@ int main() {
     string nome;
     
     // TODO: Leia o nome do usuário
-    
+    std::cout << "digite seu nome: " << std::endl;
+    std::cin >> nome;
+
     // TODO: Exiba a saudação personalizada
-    
+    std::cout << "Eae meu mano " << nome << "!" << std::endl;
+
     return 0;
 }
